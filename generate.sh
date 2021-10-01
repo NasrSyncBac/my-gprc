@@ -15,7 +15,7 @@ protoc greet/greetpb/greet.proto --go-grpc_out=.
 protoc --go-grpc_out=. greet/greetpb/greet.proto  
 protoc --go-grpc_out=. file_path/file_name*.proto 
 
-protoc -I ./greet \
-   --go_out ./greet --go_opt paths=source_relative \
-   --go-grpc_out ./greet --go-grpc_opt paths=source_relative \
-   ./greet/greetpb/greet.proto
+protoc -I ./testing \
+   --go_out ./testing --go_opt paths=source_relative \
+   --go-grpc_out ./testing --go-grpc_opt paths=source_relative \
+   ./testing/testingpb/testing.proto
