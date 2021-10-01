@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+package testing;
+option go_package="./testingpb";
+
+service TestingService{}
